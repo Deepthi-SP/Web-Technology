@@ -23,9 +23,20 @@ margin-left: 10px;
             
 
         }
+        .col{
+            float: left;
+            width: 50%;
+            height: 500px;
+        }
+        .col video{
+            height: 500px;
+            width: 90%;
+        }
     </style>
 </head>
 <body>
+    <div class="row">
+        <div class="col">
     <form action="7.js" method="get">
         <label>Firstname</label>
         <input type="text" name="frst"  onchange="prog();"  class="inputs" required>
@@ -47,5 +58,10 @@ margin-left: 10px;
 
 
     </form>
+</div>
+<div class="col">
+    <video src="7.mp4" autoplay controls width="100%"></video>
+    </div>
+    </div>
 </body>
 </html>
